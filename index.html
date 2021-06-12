@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zadanie Rekrutacyjne</title>
+    <meta name="description" content="Interaktywny poradnik szybkiego startu dla Brackets.">
+    
+ 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  	<script type="text/javascript" src="jquery-3.2.1.min.js.js"></script>
+  	<script type="text/javascript" src="index.js"></script>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+    
+<body>
+    
+    
+    
+</body>
+    <script src="jquery-3.2.1.min.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+	
+    <div class="content">
+      
+   
+    
+        
+        
+
+    
+    
+    
+	<div class="options">
+        <h1> USTAWIENIA </h1>
+        <p> *Aby otworzyć ustawienia nakliknij na imię bądź zajęty slot czasowy.*</p>
+        <h1 id="errors"> </h1>
+        <input style="display: block;" class = "button horizontal-center newperson" type="button" id="btn1" value="Dodawanie osoby">
+        
+    <div id="pierwsze" style="display: none;">
+        <h3> DODAWANIE NOWEJ OSOBY</h3>
+	OSOBA: <input class = "text newperson" id="input_id" type="text" maxlength="18" placeholder="OSOBA">
+	START: <input class = "date newperson" id="start_date" type="date" >
+	KONIEC: <input class = "date newperson" id="end_date" type="date" >
+	OPIS: <input class = "text newperson" id="input_desc" type="text" maxlength="16" placeholder="OPIS">
+	
+	<input class = "button newperson" type="button" id="btn0" value="WSTAW">
+	<input class = "button button2" type="button" id="btn2" value="Zamknij">
+    <br>
+    </div> 
+    <br>
+    <input class = "button horizontal-center newquest" type="button" id="btn9" style="display: none;" value="Zadanie ">
+    
+    <div id="edit" style="display: none;">
+        <h3>Nowe zadanie</h3>
+    <br>
+    START: <input class = "date newquest" id="start_date_for" type="date" >
+	KONIEC: <input class = "date newquest" id="end_date_for" type="date" >
+	OPIS: <input class = "text newquest" id="input_desc_for" maxlength="16" type="text" placeholder="OPIS">
+    <input class = "button newquest" type="button" id="btn3" value="Dodaj zadanie dla">
+    <input style="display: none;" type="button" id="dtid" value=" ">
+    <input class = "button button2" type="button" id="btn6" value="ZAMKNIJ">
+    </div>
+    <br>
+    <input class = "button horizontal-center editquest" type="button" id="btn8" style="display: none;" value="Zadanie ">
+        
+    <div id="edit_zad" style="display: none;">
+        <h3>Edytuj zadanie</h3>
+    START: <input class = "date editquest" id="edit_start_date" type="date" >
+	KONIEC: <input class = "date editquest" id="edit_end_date" type="date" >
+	OPIS: <input class = "text editquest" id="edit_desc" maxlength="16" type="text" placeholder="OPIS">
+    <input class = "button editquest" type="button" id="btn4" value="Edytuj zadanie dla">
+    <input class = "button button3" type="button" id="btn5" value="Usuń zadanie">
+    <input class = "button button2" type="button" id="btn7" value="ZAMKNIJ">
+    <input style="display: none;" type="button" id="qdtid" value=" ">
+    <input style="display: none;" type="button" id="qdtdesc" value=" ">
+    <input style="display: none;" type="button" id="qdtstart" value=" ">
+    <input style="display: none;" type="button" id="qdtend" value=" ">
+    
+    </div>
+    
+    </div>
+    
+<!--
+    
+    <input type="checkbox" name="change" id="cb1" value="1">Osobe  
+    <input type="checkbox" name="change" id="cb3" value="3">Datę Rozpoczęcie
+    <input type="checkbox" name="change" id="cb4" value="4">Datę Zakończenia
+    <input type="button" id="btn2" value="ZMIEŃ">
+-->
+    
+		<script>
+            
+            document.getElementById("btn0").onclick = function() {new_person()};
+            document.getElementById("btn1").onclick = function() {show_new_person()};
+            document.getElementById("btn2").onclick = function() {close_new_person()};
+            document.getElementById("btn3").onclick = function() {new_quest()};
+            document.getElementById("btn5").onclick = function() {delete_quest()};
+            document.getElementById("btn4").onclick = function() {edit_quest()};
+            document.getElementById("btn6").onclick = function() {hide_new_quest()};
+            document.getElementById("btn7").onclick = function() {hide_edit_zad()};
+            document.getElementById("btn8").onclick = function() {show_edit_zad()};
+            document.getElementById("btn9").onclick = function() {show_new_quest()};
+        </script>
+    <br/>
+    
+	
+	
+	
+
+	
+
+
+	
+
+
+	
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="timeline-chart"></div>
+	
+
+
+
+</div>
+</html>
